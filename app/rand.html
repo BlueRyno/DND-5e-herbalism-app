@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random Encounter</title>
+
+  <link rel='stylesheet' href='normalize.css'>
+  <link rel='stylesheet' href='rand.css'>
+</head>
+
+<body>
+  <div class='inputLine'>
+    <div class='inputGroup'>
+      <label for="playerNum">Number of Players:</label>
+      <input type="number" id='playerNum' value='5'>
+    </div>
+
+    <div class='inputGroup'>
+      <label for="playerLvl">Player level:</label>
+      <input type="number" id='playerLvl' value='3'>
+    </div>
+  </div>
+  
+  <div class='inputLine'>
+    <div class='inputGroup'>
+      <label for="difficulty">Difficulty:</label>
+      <select id='difficulty'>
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+        <option value="deadly">Deadly</option>
+      </select>
+    </div>
+
+    <div class='inputGroup'>
+      <label for="environment">Environment:</label>
+      <select id='environment'>
+        <option value="all" selected>All</option>
+        <option value="plains">plains</option>
+        <option value="forest">forest</option>
+        <option value="hills">hills</option>
+        <option value="mountains">mountains</option>
+        <option value="marsh">marsh</option>
+        <option value="desert">desert</option>
+        <option value="underground">underground</option>
+        <option value="aquatic">aquatic</option>
+        <option value="underdark">underdark</option>
+        <option value="Abyss">Abyss</option>
+        <option value="nine-hells">nine hells</option>
+        <option value="gehenna">gehenna</option>
+      </select>
+    </div>
+
+    <div class='inputGroup'>
+      <button type="button" id="generate">Generate</button>
+    </div>
+  </div>
+
+  <div class="results">
+
+  </div>
+
+  <script src='jquery-3.2.1.min.js'></script>
+  <script src='list.js'></script>
+  <script src='rand.js'></script>
+</body>
+</html>
