@@ -16,7 +16,7 @@ creatures = {
 
         type: "humanoid",
         family: "aarakocra",
-        monster: false,
+        morality: "good",
 
         environment: [
           "air",
@@ -30,7 +30,7 @@ creatures = {
         xp: 5900,
         
         type: "aberration",
-        monster: true,
+        morality: "evil",
         
         environment: [
           "aquatic"
@@ -42,12 +42,36 @@ creatures = {
 
         type: "celestial",
         family: "angel",
-        monster: false,
+        morality: "good",
 
         environment: [
           "any"
         ]
-      }
+      },
+
+      planetar: {
+        xp: 15000,
+
+        type: "celestial",
+        family: "angel",
+        morality: "good",
+
+        environment: [
+          "any"
+        ]
+      },
+
+      solar: {
+        xp: 33000,
+
+        type: "celestial",
+        family: "angel",
+        morality: "good",
+
+        environment: [
+          "any"
+        ]
+      },
     }
   },
 
